@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Alumni feedback form</title>
+
+        <style>
+            body{
+                background: #f2f5f9;;
+                padding:20px;
+            }
+            .container{
+                max-width: 800px;
+                margin: auto;
+                background:#fff;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h1{
+                color:blue;
+                text-align:center;
+            }
+            div{
+                background:#0066cc;
+                color:white;
+                padding:8px;
+                margin-top:15px;
+                border-radius:5px;
+            }
+            textarea{
+                height: 100px;
+            }
+
+            .rating input{
+                width:auto;
+                margin-right: 5px;
+                
+            }
+            .rating{
+            background-color: white;
+            color: black;
+            }
+
+            button{
+            margin-top:20px;
+            padding:12px 25px;
+            background:#28a745;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#218838;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing: border-box;
+        }
+            textarea{
+            height:100px;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body class="container">
+        <h1>Alumni feedback form</h1>
+        <form>
+        <div class="section">Personal Information</div>
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="name">Email Address</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label>Mobile Number</label><br>
+        <input type="tel"><br>
+        <label>Year of Completion</label><br>
+        <input type="number"><br>
+
+
+        <div class="section">Course Information</div>
+
+        <lable>Course Completed</lable><br>
+        <select>
+            <option>Select Course</option>
+            <option>Computer Fundamentals</option>
+            <option>MS Office</option>
+            <option>Advanced Excel</option>
+            <option>Web Designing</option>
+            <option>Python Programming</option>
+            <option>Tally Prime</option>
+        </select><br>
+
+        <label>Current Status</label><br>
+        <select>
+            <option>Select</option>
+            <option>Studuing</option>
+            <option>Employed</option>
+            <option>Self Employed</option>
+            <option>Freelancer</option>
+        </select><br>
+
+        <label>Company / Collage Name</label><br>
+        <input type="text"><br>
+
+        <div class="section">Training Feedback</div>
+
+        <label>Rate the Training Quality</label>
+
+        <div class="rating">
+            <input type="radio" name="rate">1
+            <input type="radio" name="rate">2
+            <input type="radio" name="rate">3
+            <input type="radio" name="rate">4
+            <input type="radio" name="rate">5
+        </div>
+
+        <label> What skills helped you the most?</label><br>
+        <textarea></textarea><br>
+
+        <label>How has the course impacted your career?</label><br>
+        <textarea></textarea><br>
+
+        <label>Suggestions for Improvenment</label><br>
+        <textarea></textarea><br>
+
+        <label>
+            <input type="checkbox" style="width:auto;"> I agree that my feedback may be used for educational and promotional purposes.
+        </label><br>
+
+        <button type="submit">Submil Feedback</button>
+        </form>
+    </body>
+</html>
